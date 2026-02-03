@@ -14,9 +14,10 @@ fix(session): prevent replay window during token refresh
 refactor(audit): extract formatter to reduce allocation
 
 Avoid:
-❌ "update code"
-❌ "fix stuff"
-❌ "changes"
+"update code"
+"fix stuff"
+"changes"
+"\n" as line breaks as they may be lost in some tools
 
 AI attribution (required for AI-assisted changes):
 - Add a trailer line at the bottom of the commit message:
