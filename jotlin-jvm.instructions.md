@@ -1,6 +1,6 @@
 ---
 applyTo: '**'
-description: 'description'
+description: 'Kotlin/JVM conventions: immutability, sealed-state models, coroutines (no blocking), constructor injection, explicit serialization.'
 ---
 Kotlin rules:
 

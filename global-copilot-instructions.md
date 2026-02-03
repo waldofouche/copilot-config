@@ -10,10 +10,28 @@ Primary priorities (in order):
 
 Core rules:
 - Never invent APIs, configuration keys, or framework capabilities.
-- If uncertain, say so instead of guessing.
+- If uncertain, say you are unsure and verify by reading code/config (or docs if provided).
 - Prefer boring, proven technology over novelty.
 - Match the existing repository style before introducing patterns.
 - Avoid overengineering.
+
+Security & safety:
+- Treat all external input as untrusted (HTTP params, headers, cookies, webhooks, MQ messages, files).
+- Validate/normalize input early; prefer allow-lists over deny-lists.
+- Use parameterized queries only. Never build SQL with string concatenation.
+- Never weaken authentication/authorization, crypto, TLS/cert validation, or signature verification.
+- Don’t introduce data exfiltration risk: avoid logging secrets/PII; don’t echo sensitive values back in errors.
+
+Reliability:
+- External calls must have explicit timeouts and clear failure behavior.
+- Retries must be bounded (max attempts) and safe (idempotent or protected via idempotency key); use backoff with jitter.
+- Prefer stateless designs and environment-driven configuration.
+
+Change safety (when editing code):
+- Make the smallest change that meets the requirement.
+- Preserve public APIs unless the task requires changes.
+- Add/adjust tests for behavior changes (at least 1 happy path + 1 edge case).
+- If changing persistence (DB/schema), prefer additive, backwards-compatible changes.
 
 Code quality:
 - Write production-grade code only.

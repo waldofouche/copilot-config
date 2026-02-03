@@ -1,6 +1,6 @@
 ---
 applyTo: '**'
-description: 'description'
+description: 'Cloud-native deployment guidelines: stateless, horizontally scalable, health-checked services with env-driven config.'
 ---
 Assume containerized deployment.
 

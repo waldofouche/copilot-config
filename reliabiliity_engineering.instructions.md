@@ -1,6 +1,6 @@
 ---
 applyTo: '**'
-description: 'description'
+description: 'Reliability engineering rules: timeouts everywhere, bounded retries with backoff, safe fallbacks, and observable external dependencies.'
 ---
 Production safety matters more than elegance.
 

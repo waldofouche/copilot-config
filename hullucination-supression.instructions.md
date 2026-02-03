@@ -1,6 +1,6 @@
 ---
 applyTo: '**'
-description: 'description'
+description: 'Anti-hallucination rules: verify APIs/config exist; never fabricate framework methods, flags, CLI options, or annotations.'
 ---
 Before generating code:
 
