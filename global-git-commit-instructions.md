@@ -18,6 +18,9 @@ Avoid:
 ❌ "fix stuff"
 ❌ "changes"
 
+AI attribution (required for AI-assisted changes):
+- Add a trailer line at the bottom of the commit message:
+  - AI-Generated: GitHub Copilot (JetBrains)
 
 Include when helpful:
 - why the change exists

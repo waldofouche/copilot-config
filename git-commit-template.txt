@@ -1,0 +1,10 @@
+# Conventional Commits:
+# <type>(scope): summary
+#
+# Optional body: why the change exists, key tradeoffs, security implications.
+#
+# Trailers (keep at bottom):
+# AI-Generated: GitHub Copilot (JetBrains)
+
+AI-Generated: GitHub Copilot (JetBrains)
+
