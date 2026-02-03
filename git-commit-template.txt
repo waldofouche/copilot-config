@@ -1,10 +1,26 @@
-# Conventional Commits:
-# <type>(scope): summary
+# Conventional Commits
 #
-# Optional body: why the change exists, key tradeoffs, security implications.
+# Format:
+#   <type>(scope): summary
 #
-# Trailers (keep at bottom):
-# AI-Generated: GitHub Copilot (JetBrains)
+# Tips:
+# - Keep the first line <= 72 chars.
+# - Use present tense; describe impact, not mechanics.
+# - Leave a blank line between subject and body.
+# - Don’t paste escaped newlines like "\\n"; use real line breaks.
+#
+# Body (optional): why the change exists, key tradeoffs, security implications.
+#
+# Trailers (required when AI-assisted; keep at very bottom):
+#   AI-Generated: GitHub Copilot (JetBrains)
+
+<type>(scope): summary
+
+# Why:
+#
+# Notes:
+# - Security:
+# - Reliability:
+# - Migration:
 
 AI-Generated: GitHub Copilot (JetBrains)
-
